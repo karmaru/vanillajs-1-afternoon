@@ -12,5 +12,7 @@ function setCard (elem) {
 
 function reset () {
     let card = document.getElementById(idImp.value)
-    card.style.color = grey
+    card.style.color = "grey"
+    idImp.value = ''
+    colorImp.value = ''
 }
