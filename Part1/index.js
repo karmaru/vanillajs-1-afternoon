@@ -73,7 +73,9 @@ function play (boxClicked) {
 }
 
 function reset () {
-
-    // arr = [];
-    // for (i = 0; )
-}
+    var table = document.getElementById("mytab1");
+    for (i = 0; i < 8; i++) {
+        document.getElementById(i).innerText = ''
+    }
+    arr = []
+    }
