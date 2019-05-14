@@ -6,6 +6,7 @@ function play (boxClicked) {
     const currId = document.getElementById('player')
     const bClicked = document.getElementById(boxClicked)
     // arr = currId.innerText[boxClicked]
+    if (!bClicked.innerText) {
     if (currId.innerText === 'X') {
         currId.innerText = 'O';
         bClicked.innerText = 'X';
@@ -16,6 +17,8 @@ function play (boxClicked) {
         bClicked.innerText = 'O';
         arr[boxClicked] = 'O';
     }
+    }
+    else {alert("Pick another box")}
 // console.log(arr)
   const topLeft = arr[0];
   const topCenter = arr[1];
